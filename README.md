@@ -1,0 +1,6 @@
+-  Hi, I’m @SwedishWizard
+-  I’m interested in Games, programming, game design, world design
+-  I’m currently learning Programming 1
+-  I’m looking to collaborate on SCP: Pandemic :D
+-  How to reach me erik.harry.ebbe@icloud.com
+-  Rolled low on intelligence check :/
