@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsten att skriva en hemsida</title>
+<style>
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+h2 {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+}
+h3 {
+	font-family: "Times New Roman", Times, serif;
+	padding-left: 20px;
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+}
+.grid-container {
+  display: grid;
+}
+.line {
+  border-bottom: 2px solid crimson;
+}
+.rund {
+  border: 2px solid crimson;
+  border-radius: 12px;
+}
+.van {
+  border: 2px solid crimson;
+}
+.texttest {
+  color: crimson;
+}
+.bak {
+  background-color: crimson;
+}
+body, html
+{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.sidhuv {
+  height: 30px;
+  width: 100%;
+  padding: 15px;
+  font-size: 25px;
+  position: fixed;
+  color: black;
+  background-color: crimson;
+}
+.rad_0 {
+  width: 300px;
+  grid-column: 1 / span 1;
+  grid-row: 1;
+  padding-top: 50px;
+  position: fixed;
+}
+.rad_1 {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+  padding-top: 50px;
+  padding-left: 350px;
+  padding-right: 350px;
+  width: 60%;
+            margin: auto;
+            min-height: 100vh;
+}
+.rad_2 {
+  grid-column: 3 / span 1;
+  grid-row: 1;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+a:link {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+a:visited {
+  color: #8c8c8c;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #8c8c8c;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: #8c8c8c;
+  background-color: transparent;
+  text-decoration: none;
+}
+		@media screen and (max-width: 1100px) {
+            .rad_1 {
+                font-size: 3vw;
+            }
+        }
+		@media screen and (max-width: 1100px) {
+            .rad_0 {
+                font-size: 2vw;
+            }
+        }
+.dir:hover {background-color: crimson;}
+.dir1:hover {background-color: salmon;}
+</style>
+</head>
+<body id="body">
+<div class="grid-item sidhuv">
+<b>
+Slutuppgift av Erik Andersson
+</b>
+</div>
+<div class="grid-container">
+	<div class="rad_0">
+	<ul>
+	<li class="dir"><a href="#body"><b>Konsten att göra en hemsida</b></a></li>
+		<li id="mytest" class="dir1"><a href="#tags"><b>Tags</b></a>
+			<ul>
+				<li class="dir"><a href="#head">Head</a></li>
+				<li class="dir"><a href="#meta">Meta charset</a></li>
+				<li class="dir"><a href="#style">Style</a></li>
+				<li class="dir"><a href="#bod">Body</a></li>
+				<li class="dir"><a href="#header">Header</a></li>
+				<li class="dir"><a href="#div">Div</a></li>
+			</ul>
+		</li>
+		<li class="dir1"><b><a href="#css">CSS</a></b>
+			<ul>
+				<li class="dir"><a href="#html">Skillnad mellan CSS och HTML</a></li>
+				<li class="dir"><a href="#border">Border</a></li>
+				<li class="dir"><a href="#color">Color</a></li>
+				<li class="dir"><a href="#alt">Alt-attributet för bilder</a></li>
+				<li class="dir"><a href="#mobil">Anpassat utseende för mobil</a></li>
+			</ul>
+		</li>
+		<li class="dir1"><b><a href="#bild">Bilder</a></b>
+			<ul>
+				<li class="dir"><a href="#inf">Infogande av bild</a></li>
+				<li class="dir"><a href="#cc">Creative Commons</a></li>
+				<li class="dir"><a href="#vad">Vad man kan göra med en bild</a></li>
+			</ul>
+		</li>
+		<li class="dir1"><b><a href="#js">Javascript</a></b>
+			<ul>
+				<li class="dir"><a href="#vadjs">Vad man kan göra med Javascript</a></li>
+				<li class="dir"><a href="#knapp">Knappar</a></li>
+			</ul>
+		</li>
+	</ul>
+	<p><button id="darkmode" onclick="lumos()">Nox</button></p>
+	</div>
+	<div class="rad_1">
+		<h1 id="tags">
+		Konsten att göra en hemsida
+		</h1>
+		<h2 id="head">
+		Tags
+		</h2>
+			<p>
+				Tags är nyckelord som beskriver olika information för webbläsaren. 
+				Tags sitter i bracket som ser ut såhär: &lt; &gt;. 
+				Använder man tags ser det ut såhär: &lt;tag&gt; &lt;/tag&gt;.
+				Sne-sträcket, "/", står för att avsluta den specifika taggen så man kan fortsätta på nästa.
+			</p>
+			<h3 id="meta">
+				Head
+			</h3>
+				<p>
+					Head innehåller en hel del andra saker, som meta charset, style, titel och annat som CSS kod.
+				</p>
+			<h3 id="style">
+				Meta charset
+			</h3>
+				<p>
+					Meta charset är hur olika tecken lagras och visas i text osv. 
+					HTML5 standarden är UTF-8 och innehåller nästan alla tecken på internet.
+					De här charset säger är vad de här tecknerna har för binär ekvalent, 
+					så UTF-8 översätter tecken så att en enhet kan förstå vad som ska visas.
+				</p>
+			<h3 id="bod">
+				Style
+			</h3>
+				<p>
+					Den här taggen säger hur saker ska se ut på hemsidan, som bakgrundsfärg, 
+					textfärg, storlekar på saker och kan även användas för att senare skriva CSS. 
+				</p>
+			<h3 id="header">
+				Body
+			</h3>
+				<p>
+					Här i skriver man all text, lägger in bilder, knappar osv. 
+					Man bestämmer även majoriteten av layouten här, som med divar eller headers.
+				</p>
+			<h3 id="div">
+				Header
+			</h3>
+				<p>
+					Head tag eller heading tag är till för rubriker. 
+					Sådana här taggar skrivs som "h1", "h2", "h3", osv och står alla för varsin storlek. 
+					Ett exempel på h1 är på titeln "Konsten att göra en hemsida", 
+					h2: "Tags", 
+					h3: "Head". 
+					Som man ser så har de olika storlekar och har sina egna användningar.
+				</p>
+			<h3>
+				Div
+			</h3>
+				<p id="css">
+					Div tillåter användning av grid-typ display. 
+					Alltså att de olika delarna av hemsidan är uppbyggda som en drid, 
+					ungefär som jag har gjort i den här hemsidan. 
+					Jag har delat upp den här hemsidan i fyra delar:
+					Längst upp där det står mitt namn och är en röd rand, 
+					till vänster med en katalog, 
+					mitten med all text och 
+					till höger för att få lite mellanrum mellan texten och sidan av hemsidan.
+				</p>
+		<h2 id="html">
+		CSS
+		</h2>
+			<p>
+				CSS, eller cascading style sheets, tillåter att ändra mer specifika saker och ange klasser. 
+				CSS kan göra saker som att fixa font på all text istället för att behöva göra det på alla taggar text för sig, 
+				definera divar, storlek och färg och även position för saker.
+			</p>
+			<h3>
+				Skillnad mellan CSS och HTML
+			</h3>
+				<p id="border">
+					Medan HTML skapar struktur på en hemsida så ger CSS mer stil till den.
+					Alltså CSS beskriver och ger mer djup till vad som är skrivet i HTML. 
+					CSS innehåler selektorer medan HTML har taggar. 
+					Medan CSS filer kan användas i HTML kan inte HTML användas i CSS-filer.
+				</p>
+			<h3>
+				Border
+			</h3>
+				<p>
+					En kant som man kan ha runt text, olika divar, eller näst intill vad som helst.	
+				</p>
+				<p class="line">
+					Man kan ha en bottom border,
+				</p>
+				<p id="color" class="rund">
+					man kan ha en rund border
+				</p>
+				<p class="van">
+					och man kan ha en vanlig border.
+				</p>
+			<h3>
+				Color
+			</h3>
+				<p>
+					Color låter en att sätta färg på något.
+					till exempel kan man sätta en färg på
+				</p>
+				<p class="texttest">
+					text,
+				</p>
+				<p id="alt" class="bak">
+					bakgrund
+				</p>
+				<p class="van">
+					och border
+				</p>
+			<h3>
+				Alt-attributet för bilder
+			</h3>
+				<p>
+					Det attributet ger extra information som man kan få om till exempel sidan inte laddar. 
+					I det här exemplet på en bild:
+				</p>
+				<p id="mobil" class="van">
+					&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;
+				</p>
+				<p>
+					så ser man att det står "alt="Italian Trulli"", 
+					som förklarar att bildens alternativa attribut ska heta "Italian Trulli"
+				</p>
+			<h3>
+				Anpassat utseende för mobil
+			</h3>
+				<p>
+					@media screen and (max-width: 1000px){
+				h1 {font-size: 40px;}
+					}
+				</p>
+				<p id="bild">
+					I det här exemplet säger hemsidan att om bredden av sidan är mindre än 1000px så ska storleken på h1 text vara 40px.
+					Den här sidan är gjord så att när man kommer till en mindre storlek så ger hemsidan upp.
+				</p>
+		<h2 id="inf">
+		Bilder
+		</h2>
+			<p>
+				Bilder är ett bra sätt att ha ett grafiskt stöd till hemsidan så att den inte ser lika tråkig ut.
+			</p>
+			<h3>
+				Infogande av bild
+			</h3>
+				<p>
+					För att infoga en bild så använder man sig av taggen &lt;img&gt;. 
+					Som tidigare nämnt bör man lägga till ett alt-attribut för att underlätta när sidan inte vill ladda.
+					När man skriver in en bild i en hemsida kan det se ut såhär:
+				</p>
+				<p class="van">
+					&lt;https://live.staticflickr.com/7266/7421672156_16516a2214_b.jpg" alt="cat in bubble"&gt;
+				</p>
+				<p>
+					och ser ut såhär:
+				</p>
+				<img src="https://live.staticflickr.com/7266/7421672156_16516a2214_b.jpg" alt="cat in bubble">
+				<p id="cc">
+					Söt katt va? 
+				</p>
+				<p>
+					Jag hittade den på Creative Commons.
+				</p>
+			<h3>
+				Creative Commons
+			</h3>
+				<p id="vad">
+					Man kan inte ha vilka bilder som helst på en hemsida, 
+					utan det finns lagar om det och rättigheter vissa har för bilder. 
+					Använder man någon annans bild utan deras tillåtelse kan de åttala dig för det. 
+					Creative Commons är bilder som man kan använda hur man vill eftersom det finns ingen som äger de på samma sätt. 
+					<a href="https://creativecommons.org/">Här</a> hittar man deras hemsida.
+				</p>
+			<h3 id="js">
+				Vad man kan göra med en bild
+			</h3>
+				<p id="vadjs">
+					En bild kan användas för att framföra ett argument eller 
+					ha lite mer färg eller känsla på hemsidan. 
+					Vill man visa något så är ju såklart en bild väldigt händig.
+				</p>
+		<h2>
+		Javascript
+		</h2>
+			<p>
+				
+			</p>
+			<h3 id="knapp">
+				Vad man kan göra med Javascript
+			</h3>
+				<p>
+					Javascript kan användas för att göra möjligheterna på en hemsida näst intill oändliga.
+					med hjälp av Javascript så kan man skapa knappar, scheman eller till och med hela spel.
+				</p>
+			<h3>
+				Knappar
+			</h3>
+				<p>
+					För att skapa en knapp börjar man med att skapa en paragraf (&lt;p&gt;) 
+					och sedan använder &lt;button&gt; taggen
+				</p>
+				<p><button>exempel</button></p>
+				<p>
+					Den här knappen kanske är tom och inte har en funktion, men det går att fixa. 
+					Vill man till exempel att knappen ska ändra en bild när man trycker på den så börjar man med att skapa knappen. 
+				</p>
+				<p>
+					Så här skriver man knappen:
+				</p>
+				<p><b>
+					&lt;p&gt;&lt;button&gt;Berg&lt;/p&gt;&lt;/button&gt;
+				</b></p>
+				<p>
+					Sedan lägger man till ett ID och funktion
+				</p>
+				<p>
+					&lt;p&gt;&lt;button <b> id="knappTryck" onclick="bild()" </b> &gt;Berg&lt;/p&gt;&lt;/button&gt;
+				</p>
+				<p>
+					Efter det väljer man två bilder från creative commons
+				</p>
+				<p>
+					https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg - Ett berg
+				</p>
+				<p>
+					https://live.staticflickr.com/6039/5882044328_d7f11207e3_b.jpg - Potatis
+				</p>
+				<p>
+					Vi lägger in ena bilden
+				</p>
+				<p><b>
+					&lt;img src="https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg" alt="mountain"&gt;
+				</b></p>
+				<p>
+					Bilden behöver också ID
+				</p>
+				<p>
+					&lt;img <b>id="mountain"</b> src="https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg" alt="mountain"&gt;
+				</p>
+				<p>
+					Nu är det dags för scripting, då börjar man med 
+				</p>
+				<p>&lt;Script&gt;</p>
+				<p>function bild() {</p>
+				<p>var knappTryck = document.getElementById("knappTryck");</p>
+				<p>var mountain = document.getElementById("mountain");</p>
+				<p>if (mountain.src == "https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg") {</p>
+				<p>mountain.src = "https://live.staticflickr.com/6039/5882044328_d7f11207e3_b.jpg";</p>
+				<p>knappTryck.innerHTML = "Potatis";</p>
+				<p>}</p>
+				<p>else if (mountain.src == "https://live.staticflickr.com/6039/5882044328_d7f11207e3_b.jpg") {</p>
+				<p>mountain.src = "https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg";</p>
+				<p>knappTryck.innerHTML = "Berg";</p>
+				<p>}</p>
+				<p>}</p>
+				<p>&lt;/Script&gt;</p>
+				<p>
+					nu kan man se hur det ser ut
+				</p>
+				<p><button id="knappTryck" onclick="bild()">Berg</button></p>
+				
+				<img id="mountain" src="https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg" alt="mountain">
+				<p>
+					Nu vet ni hur man kan göra en hemsida, Grattis! :D
+				</p>
+	</div>
+	<div class="rad_2"></div>
+</div>
+	
+   <script>
+	/*
+	element.scrollTO(0, 200)
+	https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollTo
+	https://stackoverflow.com/questions/7576342/css-to-keep-element-at-fixed-position-on-screen
+	https://wordpress.org/openverse/image/c5fd0c8c-91fa-45be-9eef-7accc1ff40e2
+	https://stackoverflow.com/questions/8773921/how-to-automatically-scroll-down-a-html-page
+	*/
+	function lumos() {
+			var darkmode = document.getElementById("darkmode");
+            if (darkmode.innerHTML == "Nox") {
+                darkmode.innerHTML = "Lumos";
+            }
+			else if (darkmode.innerHTML == "Lumos") {
+                darkmode.innerHTML = "Nox";
+            }
+			
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+       }
+	
+	function bild() {
+			var knappTryck = document.getElementById("knappTryck");
+			var mountain = document.getElementById("mountain");
+			if (mountain.src == "https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg") {
+			mountain.src = "https://live.staticflickr.com/6039/5882044328_d7f11207e3_b.jpg";
+			knappTryck.innerHTML = "Potatis";
+			}
+			else if (mountain.src == "https://live.staticflickr.com/6039/5882044328_d7f11207e3_b.jpg") {
+			mountain.src = "https://live.staticflickr.com/7015/6804719779_dd8c1683ec_b.jpg";
+			knappTryck.innerHTML = "Berg";
+			}
+	}
+   </script>
+</body>
+</html>
