@@ -1,0 +1,533 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Randonizer_2
+{
+    public partial class Form1 : Form
+    {
+        Random rng = new Random();
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Mortuis_Click(object sender, EventArgs e)
+        {
+            Txt_Choice1.Text = "Nolmas";
+            Txt_Choice1_Prob.Text = "1000";
+            if (Txt_Choice1.Text == "")
+            {
+                Txt_Choice1.Hide();
+            }
+            else
+            {
+                Txt_Choice1.Show();
+            }
+            if (Txt_Choice1_Prob.Text == "")
+            {
+                Txt_Choice1_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice1_Prob.Show();
+            }
+
+            Txt_Choice2.Text = "Nathux";
+            Txt_Choice2_Prob.Text = "130";
+            if (Txt_Choice2.Text == "")
+            {
+                Txt_Choice2.Hide();
+            }
+            else
+            {
+                Txt_Choice2.Show();
+            }
+            if (Txt_Choice2_Prob.Text == "")
+            {
+                Txt_Choice2_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice2_Prob.Show();
+            }
+
+            Txt_Choice3.Text = "Osmaden";
+            Txt_Choice3_Prob.Text = "700";
+            if (Txt_Choice3.Text == "")
+            {
+                Txt_Choice3.Hide();
+            }
+            else
+            {
+                Txt_Choice3.Show();
+            }
+            if (Txt_Choice3_Prob.Text == "")
+            {
+                Txt_Choice3_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice3_Prob.Show();
+            }
+
+            Txt_Choice4.Text = "Asmoth";
+            Txt_Choice4_Prob.Text = "50";
+            if (Txt_Choice4.Text == "")
+            {
+                Txt_Choice4.Hide();
+            }
+            else
+            {
+                Txt_Choice4.Show();
+            }
+            if (Txt_Choice4_Prob.Text == "")
+            {
+                Txt_Choice4_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice4_Prob.Show();
+            }
+
+            Txt_Choice5.Text = "Dusur";
+            Txt_Choice5_Prob.Text = "10";
+            if (Txt_Choice5.Text == "")
+            {
+                Txt_Choice5.Hide();
+            }
+            else
+            {
+                Txt_Choice5.Show();
+            }
+            if (Txt_Choice5_Prob.Text == "")
+            {
+                Txt_Choice5_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice5_Prob.Show();
+            }
+
+            Txt_Choice6.Text = "Gocfell";
+            Txt_Choice6_Prob.Text = "2";
+            if (Txt_Choice6.Text == "")
+            {
+                Txt_Choice6.Hide();
+            }
+            else
+            {
+                Txt_Choice6.Show();
+            }
+            if (Txt_Choice6_Prob.Text == "")
+            {
+                Txt_Choice6_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice6_Prob.Show();
+            }
+
+            Txt_Choice7.Text = "Godbane";
+            Txt_Choice7_Prob.Text = "500";
+            if (Txt_Choice7.Text == "")
+            {
+                Txt_Choice7.Hide();
+            }
+            else
+            {
+                Txt_Choice7.Show();
+            }
+            if (Txt_Choice7_Prob.Text == "")
+            {
+                Txt_Choice7_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice7_Prob.Show();
+            }
+
+            Txt_Choice8.Text = "Greater North";
+            Txt_Choice8_Prob.Text = "300";
+            if (Txt_Choice8.Text == "")
+            {
+                Txt_Choice8.Hide();
+            }
+            else
+            {
+                Txt_Choice8.Show();
+            }
+            if (Txt_Choice8_Prob.Text == "")
+            {
+                Txt_Choice8_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice8_Prob.Show();
+            }
+
+            Txt_Choice9.Text = "Ulchir";
+            Txt_Choice9_Prob.Text = "400";
+            if (Txt_Choice9.Text == "")
+            {
+                Txt_Choice9.Hide();
+            }
+            else
+            {
+                Txt_Choice9.Show();
+            }
+            if (Txt_Choice9_Prob.Text == "")
+            {
+                Txt_Choice9_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice9_Prob.Show();
+            }
+
+            Txt_Choice10.Text = "";
+            Txt_Choice10_Prob.Text = "";
+            if (Txt_Choice10.Text == "")
+            {
+                Txt_Choice10.Hide();
+            }
+            else
+            {
+                Txt_Choice10.Show();
+            }
+            if (Txt_Choice10_Prob.Text == "")
+            {
+                Txt_Choice10_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice10_Prob.Show();
+            }
+
+            Txt_Choice11.Text = "";
+            Txt_Choice11_Prob.Text = "";
+            if (Txt_Choice11.Text == "")
+            {
+                Txt_Choice11.Hide();
+            }
+            else
+            {
+                Txt_Choice11.Show();
+            }
+            if (Txt_Choice11_Prob.Text == "")
+            {
+                Txt_Choice11_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice11_Prob.Show();
+            }
+
+            Txt_Choice12.Text = "";
+            Txt_Choice12_Prob.Text = "";
+            if (Txt_Choice12.Text == "")
+            {
+                Txt_Choice12.Hide();
+            }
+            else
+            {
+                Txt_Choice12.Show();
+            }
+            if (Txt_Choice12_Prob.Text == "")
+            {
+                Txt_Choice12_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice12_Prob.Show();
+            }
+
+            Txt_Choice13.Text = "";
+            Txt_Choice13_Prob.Text = "";
+            if (Txt_Choice13.Text == "")
+            {
+                Txt_Choice13.Hide();
+            }
+            else
+            {
+                Txt_Choice13.Show();
+            }
+            if (Txt_Choice13_Prob.Text == "")
+            {
+                Txt_Choice13_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice13_Prob.Show();
+            }
+
+            Txt_Choice14.Text = "";
+            Txt_Choice14_Prob.Text = "";
+            if (Txt_Choice14.Text == "")
+            {
+                Txt_Choice14.Hide();
+            }
+            else
+            {
+                Txt_Choice14.Show();
+            }
+            if (Txt_Choice14_Prob.Text == "")
+            {
+                Txt_Choice14_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice14_Prob.Show();
+            }
+
+            Txt_Choice15.Text = "";
+            Txt_Choice15_Prob.Text = "";
+            if (Txt_Choice15.Text == "")
+            {
+                Txt_Choice15.Hide();
+            }
+            else
+            {
+                Txt_Choice15.Show();
+            }
+            if (Txt_Choice15_Prob.Text == "")
+            {
+                Txt_Choice15_Prob.Hide();
+            }
+            else
+            {
+                Txt_Choice15_Prob.Show();
+            }
+        }
+
+        private void Btn_Own_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Settings_Click(object sender, EventArgs e)
+        {
+            if(Btn_Settings.Text == "Settings")
+            {
+                Pnl_Settings.Show();
+                Btn_Settings.Text = "Close Settings";
+            }
+            else if (Btn_Settings.Text == "Close Settings")
+            {
+                Pnl_Settings.Hide();
+                Btn_Settings.Text = "Settings";
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Txt_Choice1_Prob.Text == "")
+            {
+                Txt_Choice1_Prob.Text = "0";
+            }
+            if (Txt_Choice2_Prob.Text == "")
+            {
+                Txt_Choice2_Prob.Text = "0";
+            }
+            if (Txt_Choice3_Prob.Text == "")
+            {
+                Txt_Choice3_Prob.Text = "0";
+            }
+            if (Txt_Choice4_Prob.Text == "")
+            {
+                Txt_Choice4_Prob.Text = "0";
+            }
+            if (Txt_Choice5_Prob.Text == "")
+            {
+                Txt_Choice5_Prob.Text = "0";
+            }
+            if (Txt_Choice6_Prob.Text == "")
+            {
+                Txt_Choice6_Prob.Text = "0";
+            }
+            if (Txt_Choice7_Prob.Text == "")
+            {
+                Txt_Choice7_Prob.Text = "0";
+            }
+            if (Txt_Choice8_Prob.Text == "")
+            {
+                Txt_Choice8_Prob.Text = "0";
+            }
+            if (Txt_Choice9_Prob.Text == "")
+            {
+                Txt_Choice9_Prob.Text = "0";
+            }
+            if (Txt_Choice10_Prob.Text == "")
+            {
+                Txt_Choice10_Prob.Text = "0";
+            }
+            if (Txt_Choice11_Prob.Text == "")
+            {
+                Txt_Choice11_Prob.Text = "0";
+            }
+            if (Txt_Choice12_Prob.Text == "")
+            {
+                Txt_Choice12_Prob.Text = "0";
+            }
+            if (Txt_Choice13_Prob.Text == "")
+            {
+                Txt_Choice13_Prob.Text = "0";
+            }
+            if (Txt_Choice14_Prob.Text == "")
+            {
+                Txt_Choice14_Prob.Text = "0";
+            }
+            if (Txt_Choice15_Prob.Text == "")
+            {
+                Txt_Choice15_Prob.Text = "0";
+            }
+            int Prob1 = Convert.ToInt32(Txt_Choice1_Prob.Text);
+            int Prob2 = Convert.ToInt32(Txt_Choice2_Prob.Text);
+            int Prob3 = Convert.ToInt32(Txt_Choice3_Prob.Text);
+            int Prob4 = Convert.ToInt32(Txt_Choice4_Prob.Text);
+            int Prob5 = Convert.ToInt32(Txt_Choice5_Prob.Text);
+            int Prob6 = Convert.ToInt32(Txt_Choice6_Prob.Text);
+            int Prob7 = Convert.ToInt32(Txt_Choice7_Prob.Text);
+            int Prob8 = Convert.ToInt32(Txt_Choice8_Prob.Text);
+            int Prob9 = Convert.ToInt32(Txt_Choice9_Prob.Text);
+            int Prob10 = Convert.ToInt32(Txt_Choice10_Prob.Text);
+            int Prob11 = Convert.ToInt32(Txt_Choice11_Prob.Text);
+            int Prob12 = Convert.ToInt32(Txt_Choice12_Prob.Text);
+            int Prob13 = Convert.ToInt32(Txt_Choice13_Prob.Text);
+            int Prob14 = Convert.ToInt32(Txt_Choice14_Prob.Text);
+            int Prob15 = Convert.ToInt32(Txt_Choice15_Prob.Text);
+            
+            int SumProb = Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13 + Prob14 + Prob15;
+            int RandNum = rng.Next(SumProb);
+            RandNum++;
+            Lbl_Spin.Text = "" + RandNum;
+
+            if (1 < RandNum && RandNum < Prob1)
+            {
+                Lbl_Spin.Text = Txt_Choice1.Text;
+            }
+            else if(Prob1 < RandNum && RandNum < Prob1 + Prob2)
+            {
+                Lbl_Spin.Text = Txt_Choice2.Text;
+            }
+            else if (Prob1 + Prob2 < RandNum && RandNum < Prob1 + Prob2 + Prob3)
+            {
+                Lbl_Spin.Text = Txt_Choice3.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4)
+            {
+                Lbl_Spin.Text = Txt_Choice4.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5)
+            {
+                Lbl_Spin.Text = Txt_Choice5.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6)
+            {
+                Lbl_Spin.Text = Txt_Choice6.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7)
+            {
+                Lbl_Spin.Text = Txt_Choice7.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8)
+            {
+                Lbl_Spin.Text = Txt_Choice8.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9)
+            {
+                Lbl_Spin.Text = Txt_Choice9.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10)
+            {
+                Lbl_Spin.Text = Txt_Choice10.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11)
+            {
+                Lbl_Spin.Text = Txt_Choice11.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12)
+            {
+                Lbl_Spin.Text = Txt_Choice12.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13)
+            {
+                Lbl_Spin.Text = Txt_Choice13.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13 + Prob14)
+            {
+                Lbl_Spin.Text = Txt_Choice14.Text;
+            }
+            else if (Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13 + Prob14 < RandNum && RandNum < Prob1 + Prob2 + Prob3 + Prob4 + Prob5 + Prob6 + Prob7 + Prob8 + Prob9 + Prob10 + Prob11 + Prob12 + Prob13 + Prob14 + Prob15)
+            {
+                Lbl_Spin.Text = Txt_Choice15.Text;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Pnl_Settings.Hide();
+                Txt_Choice1.Hide();
+                Txt_Choice1_Prob.Hide();
+            Txt_Choice1_Prob.Text = "0";
+                Txt_Choice2.Hide();
+                Txt_Choice2_Prob.Hide();
+            Txt_Choice2_Prob.Text = "0";
+            Txt_Choice3.Hide();
+                Txt_Choice3_Prob.Hide();
+            Txt_Choice3_Prob.Text = "0";
+            Txt_Choice4.Hide();
+                Txt_Choice4_Prob.Hide();
+            Txt_Choice4_Prob.Text = "0";
+            Txt_Choice5.Hide();
+                Txt_Choice5_Prob.Hide();
+            Txt_Choice6_Prob.Text = "0";
+            Txt_Choice6.Hide();
+                Txt_Choice6_Prob.Hide();
+            Txt_Choice7_Prob.Text = "0";
+            Txt_Choice7.Hide();
+                Txt_Choice7_Prob.Hide();
+            Txt_Choice8_Prob.Text = "0";
+            Txt_Choice8.Hide();
+                Txt_Choice8_Prob.Hide();
+            Txt_Choice8_Prob.Text = "0";
+            Txt_Choice9.Hide();
+                Txt_Choice9_Prob.Hide();
+            Txt_Choice9_Prob.Text = "0";
+            Txt_Choice10.Hide();
+                Txt_Choice10_Prob.Hide();
+            Txt_Choice10_Prob.Text = "0";
+            Txt_Choice11.Hide();
+                Txt_Choice11_Prob.Hide();
+            Txt_Choice11_Prob.Text = "0";
+            Txt_Choice12.Hide();
+                Txt_Choice12_Prob.Hide();
+            Txt_Choice12_Prob.Text = "0";
+            Txt_Choice13.Hide();
+                Txt_Choice13_Prob.Hide();
+            Txt_Choice13_Prob.Text = "0";
+            Txt_Choice14.Hide();
+                Txt_Choice14_Prob.Hide();
+            Txt_Choice14_Prob.Text = "0";
+            Txt_Choice15.Hide();
+                Txt_Choice15_Prob.Hide();
+            Txt_Choice15_Prob.Text = "0";
+        }
+    }
+}
