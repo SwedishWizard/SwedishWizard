@@ -1,4 +1,5 @@
--  Hi, I’m @SwedishWizard, also known as Erik Andersson, also known as Sir Honkytonk, also known as Cucaluete: eater of big berries
+-  Hi, I’m @SwedishWizard, also known as Erik Andersson, also known as Sir Honkytonk,
+also known as Cucaluete, eater of big berries
 -  I’m interested in Games, programming, game design, world design, voice acting, 3D modeling, etc, etc
 -  Studying an AI programme at MDU sweden
 -  How to reach me:
